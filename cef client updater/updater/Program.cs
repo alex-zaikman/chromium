@@ -13,6 +13,7 @@ namespace updater
     {
         public const string LOCAL_INI_NAME = "config.ini";
         public const string EXEC_NAME = "cefclient.exe";
+        public const string SERVER_INI_NAME = "version.ini.html";
         public static LocalIni local = null;
         public static ServerIni serv = null;
         public static updateForm form = null;
