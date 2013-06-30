@@ -51,7 +51,7 @@ namespace updater
             var result = string.Empty;
             using (var webClient = new System.Net.WebClient())
             {
-                result = webClient.DownloadString(concutUrl(url.ToString(), "version.ini.html"));
+                result = webClient.DownloadString(concutUrl(url.ToString(),Program.SERVER_INI_NAME));
             }
             string[] stringSeparators = new string[] { "\n", "\r" };
             return result.Split(stringSeparators, StringSplitOptions.RemoveEmptyEntries);
